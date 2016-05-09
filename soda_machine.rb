@@ -11,7 +11,7 @@ class SodaMachine
   end
 
   def find_soda(soda_brand)
-    sodas.select { |soda| soda.brand == soda_brand } [0]
+    @sodas.select { |soda| soda.brand == soda_brand } [0]
   end
 
   def sell(soda_brand)
